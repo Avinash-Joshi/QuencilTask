@@ -1,0 +1,22 @@
+{% extends 'signup.html'%}
+
+{% block style %}
+<style>
+    #warning {
+        border: 2px solid black;
+        margin: 20px;
+        text-align: center;
+    }
+
+    #warning h2 {
+        color: red;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div id="warning">
+    <h2>There is already an account with this email id</h2>
+    <h2>If its your go to signin or check emailid you entered</h3>
+</div>
+{% endblock %}
