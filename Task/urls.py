@@ -21,7 +21,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.signup,name='signup'),
     path('home',views.home,name='home'), # / is removed due to post request
-    # path('signin/',include('signin.urls')),
-    path('signin/',views.signin,name='signin'),
-    path('home1',views.home1,name='home1')
+    path('signin/',include('signin.urls')),
 ]
+
+
+
+
+# path('signin/',include('signin.urls')),
+# path('home1',views.home1,name='home1')
